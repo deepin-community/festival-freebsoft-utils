@@ -1,0 +1,142 @@
+festival-freebsoft-utils (0.10-8) unstable; urgency=medium
+
+  * control: Set Vcs-* to salsa.debian.org.
+  * control: Add myself as uploader.
+  * watch: Generalize pattern.
+
+ -- Samuel Thibault <sthibault@debian.org>  Mon, 09 Dec 2019 01:19:18 +0100
+
+festival-freebsoft-utils (0.10-7) unstable; urgency=medium
+
+  [ Samuel Thibault ]
+  * Team upload.
+
+  [ Sergio Oller ]
+  * Fix Vcs-Git, Vcs-Browse fields
+
+ -- Samuel Thibault <sthibault@debian.org>  Sun, 17 Jun 2018 15:08:50 +0200
+
+festival-freebsoft-utils (0.10-6) unstable; urgency=medium
+
+  * Adopt package by the Debian TTS team (Closes: #730985)
+  * Bump standards to 4.1.2 (no changes)
+  * Add Vcs-* fields for the (dgit-based) packaging
+
+ -- Paul Gevers <elbrus@debian.org>  Mon, 11 Dec 2017 22:07:44 +0100
+
+festival-freebsoft-utils (0.10-5) unstable; urgency=medium
+
+  * QA upload.
+  * Migrations:
+      - debian/copyright to 1.0 format.
+      - DH level updated to 10.
+  * debian/clean: added to removed a file before build process.
+  * debian/control:
+      - Added texinfo to field Build-Depends field.
+      - Bumped Standars-Version to 3.9.8.
+      - Removed the useless field Conflicts.
+      - Updated the field Homepage.
+  * debian/copyright: updated all data.
+  * debian/docs: added the upstream file ANNOUNCE.
+  * debian/info: created to install the files .info in correct paths.
+  * debian/install: created to install the files .scm in right paths.
+  * debian/patches/fix-gfdl.patch: created to avoid an error caused by
+    the low level of the section @appendixsubsec on file doc/fdl.texi.
+  * debian/rules:
+      - Added the override_dh_installchangelogs to install the upstream
+        changelog.
+      - Nigrated to new (reduced) format.
+  * debian/watch: improved and updated to version 4.
+
+ -- Raphael Mota Ramos <raphaelmota.ti@gmail.com>  Wed, 26 Oct 2016 10:58:25 -0200
+
+festival-freebsoft-utils (0.10-4) unstable; urgency=medium
+
+  * QA upload.
+  * Maintainer field set to QA Group.
+  * Bump Standards-Version to 3.9.6.
+  * Add debian/watch.
+  * Add recommended debian/rules target: build-arch and build-indep.
+
+ -- Emanuele Rocca <ema@debian.org>  Sat, 28 Nov 2015 17:41:30 +0100
+
+festival-freebsoft-utils (0.10-3) unstable; urgency=low
+
+  * Switch to dpkg-source 3.0 (quilt) format.
+  * Updated to debhelper 7.
+  * Homepage field added.
+  * Standards 3.8.4.
+
+ -- Milan Zamazal <pdm@debian.org>  Mon, 15 Mar 2010 09:56:12 +0100
+
+festival-freebsoft-utils (0.10-2) unstable; urgency=low
+
+  * Upload to unstable.
+
+ -- Milan Zamazal <pdm@debian.org>  Sat, 07 Mar 2009 14:28:47 +0100
+
+festival-freebsoft-utils (0.10-1) experimental; urgency=low
+
+  * New upstream version.
+  * Uploaded to experimental because lenny is frozen.
+
+ -- Milan Zamazal <pdm@debian.org>  Thu, 16 Oct 2008 12:12:39 +0200
+
+festival-freebsoft-utils (0.9-2) unstable; urgency=low
+
+  * Merge libestools bug workaround from upstream and document the
+    possible security problem with creating temporary files in
+    README.Debian.
+
+ -- Milan Zamazal <pdm@debian.org>  Thu, 17 Jul 2008 12:48:10 +0200
+
+festival-freebsoft-utils (0.9-1) unstable; urgency=low
+
+  * New upstream version.
+  * Standards 3.8.0 (no real change).
+
+ -- Milan Zamazal <pdm@debian.org>  Thu, 26 Jun 2008 20:44:40 +0200
+
+festival-freebsoft-utils (0.8-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Milan Zamazal <pdm@debian.org>  Fri, 23 Nov 2007 20:39:30 +0100
+
+festival-freebsoft-utils (0.7-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Milan Zamazal <pdm@debian.org>  Tue,  3 Oct 2006 16:31:29 +0200
+
+festival-freebsoft-utils (0.6-2) unstable; urgency=low
+
+  * Put debhelper into Build-Depends instead of Build-Depends-Indep.
+  * Standards 3.7.2 (no real change).
+
+ -- Milan Zamazal <pdm@debian.org>  Thu, 15 Jun 2006 19:53:15 +0200
+
+festival-freebsoft-utils (0.6-1) unstable; urgency=low
+
+  * New upstream version.
+  * Standards 3.6.2 (no real change).
+
+ -- Milan Zamazal <pdm@debian.org>  Fri, 17 Feb 2006 09:55:50 +0100
+
+festival-freebsoft-utils (0.4-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Milan Zamazal <pdm@debian.org>  Tue, 19 Oct 2004 19:11:43 +0200
+
+festival-freebsoft-utils (0.2-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Milan Zamazal <pdm@debian.org>  Tue, 11 May 2004 15:17:48 +0200
+
+festival-freebsoft-utils (0.1-1) unstable; urgency=low
+
+  * Initial packaging; closes: #230775.
+
+ -- Milan Zamazal <pdm@debian.org>  Mon,  2 Feb 2004 15:46:10 +0100

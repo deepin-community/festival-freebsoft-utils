@@ -1,0 +1,14 @@
+Security notice:
+
+As there is no secure way to create temporary files in Festival, some
+festival-freebsoft-utils functions may be locally insecure.  The only way to
+prevent this is to set TMPDIR environment variable to a directory not writable
+by non-trusted users before running Festival.  You can do this e.g. by the
+following shell command (assuming the $HOME/tmpdir directory exists):
+
+  export TMPDIR=$HOME/tmp
+
+I'd suggest putting this setting into your shell startup file as it is good
+practice to set the variable anyway.
+
+ -- Milan Zamazal <pdm@debian.org>  Wed, 16 Jul 2008 22:54:09 +0200

@@ -1,0 +1,27 @@
+Source: festival-freebsoft-utils
+Section: sound
+Priority: optional
+Maintainer: Debian TTS Team <tts-project@lists.alioth.debian.org>
+Uploaders: Paul Gevers <elbrus@debian.org>, Sergio Oller <sergioller@gmail.com>, Samuel Thibault <sthibault@debian.org>
+Build-Depends: debhelper (>= 10), texinfo
+Standards-Version: 4.1.2
+Homepage: http://www.freebsoft.org/festival-freebsoft-utils
+Vcs-Git: https://salsa.debian.org/tts-team/festival-freebsoft-utils.git
+Vcs-Browser: https://salsa.debian.org/tts-team/festival-freebsoft-utils
+
+Package: festival-freebsoft-utils
+Architecture: all
+Depends: festival, ${misc:Depends}
+Recommends: sox
+Conflicts: speech-dispatcher (<= 0.2-5)
+Description: Festival extensions and utilities
+ Miscellaneous Festival utilities, providing especially the following
+ features: Generalized concept of input events, including ability to
+ play sounds within the synthesized text and to map logical input events
+ to other events; replacing given words in the synthesized text by events;
+ spelling; capital letter signalization; punctuation reading modes;
+ miscellaneous Festival Scheme functions.
+ .
+ Primary focus of festival-freebsoft-utils is on Festival cooperation with
+ Speech Dispatcher, but they may be used together with other speech frontends
+ or for other purposes as well.
